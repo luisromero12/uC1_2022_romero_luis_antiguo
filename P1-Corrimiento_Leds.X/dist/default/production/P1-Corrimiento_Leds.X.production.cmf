@@ -1,0 +1,505 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/P1-Corrimiento_Leds.o
+CODE - 0 0 0 E6 1 1
+code CODE 0 1FEB6 1FEB6 14A 1 2
+resetVect CODE 0 1FEB2 1FEB2 4 1 2
+udata_acs COMRAM 1 500 500 3 1 1
+config CONFIG 4 300000 300000 23 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 560-36FF 1
+SFR E6-4FF 1
+SFR 3700-3FFF 1
+BANK5 560-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+BANK8 800-8FF 1
+BANK9 900-9FF 1
+CONST E6-1FEB1 1
+IDLOC 200000-20003F 1
+SMALLCONST 4000-1FEB1 1
+CODE E6-1FEB1 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK13 D00-DFF 1
+BANK14 E00-EFF 1
+BANK15 F00-FFF 1
+BANK16 1000-10FF 1
+BANK17 1100-11FF 1
+BANK18 1200-12FF 1
+BANK19 1300-13FF 1
+BANK20 1400-14FF 1
+BANK21 1500-15FF 1
+BANK22 1600-16FF 1
+BANK23 1700-17FF 1
+BANK24 1800-18FF 1
+BANK25 1900-19FF 1
+BANK26 1A00-1AFF 1
+BANK27 1B00-1BFF 1
+BANK28 1C00-1CFF 1
+BANK29 1D00-1DFF 1
+BANK30 1E00-1EFF 1
+BANK31 1F00-1FFF 1
+BANK32 2000-20FF 1
+BANK33 2100-21FF 1
+BANK34 2200-22FF 1
+BANK35 2300-23FF 1
+BANK36 2400-24FF 1
+BANK37 2500-25FF 1
+BANK38 2600-26FF 1
+BANK39 2700-27FF 1
+BANK40 2800-28FF 1
+BANK41 2900-29FF 1
+BANK42 2A00-2AFF 1
+BANK43 2B00-2BFF 1
+BANK44 2C00-2CFF 1
+BANK45 2D00-2DFF 1
+BANK46 2E00-2EFF 1
+BANK47 2F00-2FFF 1
+BANK48 3000-30FF 1
+BANK49 3100-31FF 1
+BANK50 3200-32FF 1
+BANK51 3300-33FF 1
+BANK52 3400-34FF 1
+BANK53 3500-35FF 1
+BANK54 3600-36FF 1
+BIGRAM 500-36FF 1
+BIGSFR E6-4FF 1
+BIGSFR 3700-3FFF 1
+COMRAM 503-55F 1
+CONFIG 300023-300023 1
+EEDATA 380000-3803FF 1
+MEDIUMCONST 4000-FFFF 1
+MEDIUMCONST 14000-1FEB1 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/P1-Corrimiento_Leds.o
+0 CODE ABS >26:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+4 CODE ABS >27:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+8 CODE ABS >31:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+A CODE ABS >32:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+C CODE ABS >33:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+10 CODE ABS >37:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+12 CODE ABS >38:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+14 CODE ABS >39:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+16 CODE ABS >40:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+18 CODE ABS >41:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+1C CODE ABS >42:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+1E CODE ABS >43:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+22 CODE ABS >45:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+24 CODE ABS >46:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+26 CODE ABS >47:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+2A CODE ABS >48:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+2C CODE ABS >49:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+30 CODE ABS >51:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+32 CODE ABS >52:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+34 CODE ABS >53:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+38 CODE ABS >54:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+3A CODE ABS >55:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+3E CODE ABS >57:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+40 CODE ABS >58:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+42 CODE ABS >59:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+46 CODE ABS >60:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+48 CODE ABS >61:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+4C CODE ABS >65:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+4E CODE ABS >66:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+50 CODE ABS >67:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+52 CODE ABS >68:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+54 CODE ABS >69:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+58 CODE ABS >70:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+5A CODE ABS >71:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+5E CODE ABS >73:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+60 CODE ABS >74:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+62 CODE ABS >75:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+66 CODE ABS >76:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+68 CODE ABS >77:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+6C CODE ABS >79:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+6E CODE ABS >80:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+70 CODE ABS >81:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+74 CODE ABS >82:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+76 CODE ABS >83:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+7A CODE ABS >85:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+7C CODE ABS >86:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+7E CODE ABS >87:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+82 CODE ABS >88:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+84 CODE ABS >89:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+88 CODE ABS >91:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+8C CODE ABS >95:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+90 CODE ABS >96:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+94 CODE ABS >97:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+96 CODE ABS >98:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+9A CODE ABS >99:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+9E CODE ABS >103:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+A2 CODE ABS >104:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+A6 CODE ABS >105:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+A8 CODE ABS >106:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+AC CODE ABS >107:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+B0 CODE ABS >111:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+B2 CODE ABS >112:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+B4 CODE ABS >113:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+B6 CODE ABS >114:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+B8 CODE ABS >115:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+BC CODE ABS >116:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+C0 CODE ABS >121:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+C2 CODE ABS >122:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+C4 CODE ABS >123:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+C6 CODE ABS >124:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+C8 CODE ABS >125:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+CA CODE ABS >126:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+CC CODE ABS >131:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+CE CODE ABS >132:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+D0 CODE ABS >135:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+D2 CODE ABS >136:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+D4 CODE ABS >137:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+D6 CODE ABS >138:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+D8 CODE ABS >139:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+DA CODE ABS >141:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+DC CODE ABS >142:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+DE CODE ABS >143:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+E0 CODE ABS >144:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+E2 CODE ABS >145:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+E4 CODE ABS >146:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+1FEB2 resetVect CODE >10:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+1FEB6 code CODE >24:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FEB8 code CODE >25:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FEBA code CODE >27:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FEBC code CODE >28:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FEBE code CODE >29:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FEC2 code CODE >30:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FEC4 code CODE >36:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FEC6 code CODE >37:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FEC8 code CODE >38:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FECA code CODE >40:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FECC code CODE >41:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FED0 code CODE >42:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FED2 code CODE >48:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FED4 code CODE >49:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FED6 code CODE >51:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FED8 code CODE >52:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FEDA code CODE >53:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FEDE code CODE >54:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FEE0 code CODE >60:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FEE2 code CODE >61:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FEE4 code CODE >62:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FEE6 code CODE >64:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FEE8 code CODE >65:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FEEC code CODE >66:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FEEE code CODE >72:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FEF0 code CODE >73:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FEF2 code CODE >74:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FEF4 code CODE >75:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FEF6 code CODE >77:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FEF8 code CODE >78:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FEFC code CODE >79:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FEFE code CODE >85:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF00 code CODE >86:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF02 code CODE >88:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF04 code CODE >89:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF06 code CODE >90:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF0A code CODE >91:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF0C code CODE >97:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF0E code CODE >98:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF10 code CODE >99:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF12 code CODE >100:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF14 code CODE >102:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF16 code CODE >103:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF18 code CODE >104:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF1C code CODE >105:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF1E code CODE >111:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF20 code CODE >112:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF22 code CODE >115:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF24 code CODE >116:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF26 code CODE >118:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF28 code CODE >119:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF2A code CODE >120:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF2E code CODE >121:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF30 code CODE >122:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF34 code CODE >123:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF36 code CODE >128:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF38 code CODE >129:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF3A code CODE >132:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF3C code CODE >133:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF3E code CODE >135:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF40 code CODE >136:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF42 code CODE >137:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF46 code CODE >138:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF48 code CODE >139:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF4C code CODE >140:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF4E code CODE >145:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF50 code CODE >146:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF52 code CODE >149:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF54 code CODE >150:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF56 code CODE >152:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF58 code CODE >153:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF5A code CODE >154:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF5E code CODE >155:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF60 code CODE >156:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF64 code CODE >157:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF66 code CODE >162:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF68 code CODE >163:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF6A code CODE >166:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF6C code CODE >167:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF6E code CODE >169:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF70 code CODE >170:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF72 code CODE >171:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF76 code CODE >172:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF78 code CODE >173:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF7C code CODE >174:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF7E code CODE >179:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF80 code CODE >180:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF82 code CODE >183:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF84 code CODE >184:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF86 code CODE >186:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF88 code CODE >187:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF8A code CODE >188:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF8E code CODE >189:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF90 code CODE >190:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF94 code CODE >191:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF96 code CODE >196:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF98 code CODE >197:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF9A code CODE >200:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF9C code CODE >201:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FF9E code CODE >203:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFA0 code CODE >204:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFA2 code CODE >205:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFA6 code CODE >206:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFA8 code CODE >207:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFAC code CODE >208:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFAE code CODE >213:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFB0 code CODE >214:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFB2 code CODE >217:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFB4 code CODE >218:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFB6 code CODE >220:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFB8 code CODE >221:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFBA code CODE >222:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFBE code CODE >223:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFC0 code CODE >224:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFC4 code CODE >225:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFC6 code CODE >229:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFC8 code CODE >230:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFCA code CODE >233:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFCC code CODE >234:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFCE code CODE >236:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFD0 code CODE >237:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFD2 code CODE >238:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFD6 code CODE >239:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFD8 code CODE >240:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFDC code CODE >241:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFDE code CODE >245:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFE0 code CODE >246:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFE2 code CODE >248:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFE4 code CODE >249:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFE6 code CODE >252:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFE8 code CODE >253:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFEA code CODE >255:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFEC code CODE >256:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFEE code CODE >257:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFF2 code CODE >258:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFF4 code CODE >259:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFF8 code CODE >260:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFFA code CODE >261:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+1FFFE code CODE >262:C:\Users\luanr\Documents\4to Ciclo\Microcontroladores\proyectos\uC1_2022_romero_luis\P1-Corrimiento_Leds.X/Retardos.inc
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 20000 0 ABS 0 - -
+__Hspace_1 503 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 600023 0 ABS 0 - -
+__Hudata_bank5 E6 0 ABS 0 udata_bank5 -
+__Hudata_bank6 E6 0 ABS 0 udata_bank6 -
+__Hudata_bank7 E6 0 ABS 0 udata_bank7 -
+__Hudata_bank8 E6 0 ABS 0 udata_bank8 -
+__Hudata_bank9 E6 0 ABS 0 udata_bank9 -
+__Hudata_bank10 E6 0 ABS 0 udata_bank10 -
+__Hudata_bank11 E6 0 ABS 0 udata_bank11 -
+__Hudata_bank12 E6 0 ABS 0 udata_bank12 -
+__Hudata_bank13 E6 0 ABS 0 udata_bank13 -
+__Hudata_bank14 E6 0 ABS 0 udata_bank14 -
+__Hudata_bank15 E6 0 ABS 0 udata_bank15 -
+__Hudata_bank16 E6 0 ABS 0 udata_bank16 -
+__Hudata_bank17 E6 0 ABS 0 udata_bank17 -
+__Hudata_bank18 E6 0 ABS 0 udata_bank18 -
+__Hudata_bank19 E6 0 ABS 0 udata_bank19 -
+__Hudata_bank20 E6 0 ABS 0 udata_bank20 -
+__Hudata_bank21 E6 0 ABS 0 udata_bank21 -
+__Hudata_bank22 E6 0 ABS 0 udata_bank22 -
+__Hudata_bank23 E6 0 ABS 0 udata_bank23 -
+__Hudata_bank24 E6 0 ABS 0 udata_bank24 -
+__Hudata_bank25 E6 0 ABS 0 udata_bank25 -
+__Hudata_bank26 E6 0 ABS 0 udata_bank26 -
+__Hudata_bank27 E6 0 ABS 0 udata_bank27 -
+__Hudata_bank28 E6 0 ABS 0 udata_bank28 -
+__Hudata_bank29 E6 0 ABS 0 udata_bank29 -
+__Hudata_bank30 E6 0 ABS 0 udata_bank30 -
+__Hudata_bank31 E6 0 ABS 0 udata_bank31 -
+__Hudata_bank32 E6 0 ABS 0 udata_bank32 -
+__Hudata_bank33 E6 0 ABS 0 udata_bank33 -
+__Hudata_bank34 E6 0 ABS 0 udata_bank34 -
+__Hudata_bank35 E6 0 ABS 0 udata_bank35 -
+__Hudata_bank36 E6 0 ABS 0 udata_bank36 -
+__Hudata_bank37 E6 0 ABS 0 udata_bank37 -
+__Hudata_bank38 E6 0 ABS 0 udata_bank38 -
+__Hudata_bank39 E6 0 ABS 0 udata_bank39 -
+__Hudata_bank40 E6 0 ABS 0 udata_bank40 -
+__Hudata_bank41 E6 0 ABS 0 udata_bank41 -
+__Hudata_bank42 E6 0 ABS 0 udata_bank42 -
+__Hudata_bank43 E6 0 ABS 0 udata_bank43 -
+__Hudata_bank44 E6 0 ABS 0 udata_bank44 -
+__Hudata_bank45 E6 0 ABS 0 udata_bank45 -
+__Hudata_bank46 E6 0 ABS 0 udata_bank46 -
+__Hudata_bank47 E6 0 ABS 0 udata_bank47 -
+__Hudata_bank48 E6 0 ABS 0 udata_bank48 -
+__Hudata_bank49 E6 0 ABS 0 udata_bank49 -
+__Hudata_bank50 E6 0 ABS 0 udata_bank50 -
+__Hudata_bank51 E6 0 ABS 0 udata_bank51 -
+__Hudata_bank52 E6 0 ABS 0 udata_bank52 -
+__Hudata_bank53 E6 0 ABS 0 udata_bank53 -
+__Hudata_bank54 E6 0 ABS 0 udata_bank54 -
+isa$xinst 0 0 ABS 0 - build/default/production/P1-Corrimiento_Leds.o
+__Hedata E6 0 ABS 0 edata -
+__Hudata E6 0 ABS 0 udata -
+__Hconfig 300023 0 CONFIG 4 config -
+__Ledata E6 0 ABS 0 edata -
+__Ludata E6 0 ABS 0 udata -
+__HCODE E6 0 ABS 0 CODE -
+__Hcode E6 0 ABS 0 code -
+__Hdata E6 0 ABS 0 data -
+__LCODE 0 0 ABS 0 CODE -
+__Lcode E6 0 ABS 0 code -
+__Ldata E6 0 ABS 0 data -
+__S0 20000 0 ABS 0 - -
+__S1 503 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Ludata_bank10 E6 0 ABS 0 udata_bank10 -
+__Ludata_bank11 E6 0 ABS 0 udata_bank11 -
+__Ludata_bank12 E6 0 ABS 0 udata_bank12 -
+__Ludata_bank13 E6 0 ABS 0 udata_bank13 -
+__Ludata_bank14 E6 0 ABS 0 udata_bank14 -
+__Ludata_bank15 E6 0 ABS 0 udata_bank15 -
+__Ludata_bank16 E6 0 ABS 0 udata_bank16 -
+__Ludata_bank17 E6 0 ABS 0 udata_bank17 -
+__Ludata_bank18 E6 0 ABS 0 udata_bank18 -
+__Ludata_bank19 E6 0 ABS 0 udata_bank19 -
+__Ludata_bank20 E6 0 ABS 0 udata_bank20 -
+__Ludata_bank21 E6 0 ABS 0 udata_bank21 -
+__Ludata_bank22 E6 0 ABS 0 udata_bank22 -
+__Ludata_bank23 E6 0 ABS 0 udata_bank23 -
+__Ludata_bank24 E6 0 ABS 0 udata_bank24 -
+__Ludata_bank25 E6 0 ABS 0 udata_bank25 -
+__Ludata_bank26 E6 0 ABS 0 udata_bank26 -
+__Ludata_bank27 E6 0 ABS 0 udata_bank27 -
+__Ludata_bank28 E6 0 ABS 0 udata_bank28 -
+__Ludata_bank29 E6 0 ABS 0 udata_bank29 -
+__Ludata_bank30 E6 0 ABS 0 udata_bank30 -
+__Ludata_bank31 E6 0 ABS 0 udata_bank31 -
+__Ludata_bank32 E6 0 ABS 0 udata_bank32 -
+__Ludata_bank33 E6 0 ABS 0 udata_bank33 -
+__Ludata_bank34 E6 0 ABS 0 udata_bank34 -
+__Ludata_bank35 E6 0 ABS 0 udata_bank35 -
+__Ludata_bank36 E6 0 ABS 0 udata_bank36 -
+__Ludata_bank37 E6 0 ABS 0 udata_bank37 -
+__Ludata_bank38 E6 0 ABS 0 udata_bank38 -
+__Ludata_bank39 E6 0 ABS 0 udata_bank39 -
+__Ludata_bank40 E6 0 ABS 0 udata_bank40 -
+__Ludata_bank41 E6 0 ABS 0 udata_bank41 -
+__Ludata_bank42 E6 0 ABS 0 udata_bank42 -
+__Ludata_bank43 E6 0 ABS 0 udata_bank43 -
+__Ludata_bank44 E6 0 ABS 0 udata_bank44 -
+__Ludata_bank45 E6 0 ABS 0 udata_bank45 -
+__Ludata_bank46 E6 0 ABS 0 udata_bank46 -
+__Ludata_bank47 E6 0 ABS 0 udata_bank47 -
+__Ludata_bank48 E6 0 ABS 0 udata_bank48 -
+__Ludata_bank49 E6 0 ABS 0 udata_bank49 -
+__Ludata_bank50 E6 0 ABS 0 udata_bank50 -
+__Ludata_bank51 E6 0 ABS 0 udata_bank51 -
+__Ludata_bank52 E6 0 ABS 0 udata_bank52 -
+__Ludata_bank53 E6 0 ABS 0 udata_bank53 -
+__Ludata_bank54 E6 0 ABS 0 udata_bank54 -
+__Lconfig 0 0 CONFIG 4 config -
+isa$std 1 0 ABS 0 - build/default/production/P1-Corrimiento_Leds.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__HresetVect E6 0 ABS 0 resetVect -
+__Ludata_bank5 E6 0 ABS 0 udata_bank5 -
+__Ludata_bank6 E6 0 ABS 0 udata_bank6 -
+__Ludata_bank7 E6 0 ABS 0 udata_bank7 -
+__Ludata_bank8 E6 0 ABS 0 udata_bank8 -
+__Ludata_bank9 E6 0 ABS 0 udata_bank9 -
+__LresetVect E6 0 ABS 0 resetVect -
+__Hudata_acs E6 0 ABS 0 udata_acs -
+__Ludata_acs E6 0 ABS 0 udata_acs -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+code 0 1FEB6 1FEB6 14A 1
+resetVect 0 1FEB2 1FEB2 4 1
+udata_acs 1 500 500 3 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
